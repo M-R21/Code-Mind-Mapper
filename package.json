@@ -1,0 +1,23 @@
+{
+  "name": "cortex-monorepo",
+  "version": "1.0.0",
+  "author": "M-R21",
+  "description": "High-performance codebase analysis engine and interactive mapping tool.",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "pnpm -C apps/desktop dev",
+    "build": "pnpm -C apps/desktop build",
+    "test:ui": "pnpm -C apps/desktop test",
+    "test:engine": "cd engine && pytest tests/"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  }
+}
