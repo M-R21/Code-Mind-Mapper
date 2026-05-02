@@ -1,79 +1,109 @@
-# Cortex 🧠
+<p align="center">
+  <h1 align="center">Cortex (Code-Mind-Mapper)</h1>
+  <p align="center">
+    High-performance codebase analysis engine and interactive mapping tool.
+    <br />
+    Understand complex architectures, visualize dependencies, and navigate large-scale projects with clarity.
+  </p>
+</p>
 
-**Cortex** is a high-performance codebase analysis engine and interactive mapping tool. It helps developers understand complex architectures, visualize dependencies, and navigate large-scale projects with ease.
+<p align="center">
+  <a href="#overview">Overview</a> ·
+  <a href="#features">Features</a> ·
+  <a href="#architecture">Architecture</a> ·
+  <a href="#getting-started">Getting Started</a> ·
+  <a href="#development">Development</a> ·
+  <a href="#testing">Testing</a>
+</p>
 
-![Banner](https://raw.githubusercontent.com/placeholder-repo/cortex/main/assets/banner.png)
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License" />
+  <img src="https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&logoColor=white" alt="Node" />
+  <img src="https://img.shields.io/badge/pnpm-%3E%3D9-F69220?logo=pnpm&logoColor=white" alt="pnpm" />
+  <img src="https://img.shields.io/badge/python-%3E%3D3.10-3776AB?logo=python&logoColor=white" alt="Python" />
+</p>
 
-## ✨ Features
+---
 
-- **Codebase Mapping**: Visualizes the structure and relationships within your project.
-- **Analysis Engine**: Fast backend built with FastAPI and specialized plugins.
-- **Desktop Experience**: Native desktop application for a seamless workflow.
-- **Plugin System**: Extendable architecture with support for Universal and Django-specific analysis.
-- **Modern UI**: Built with React, TypeScript, and Tailwind CSS.
+## Overview
 
-## 🏗️ Architecture
+**Cortex** pairs a fast analysis engine with a polished desktop experience so teams can explore codebases like a map. It helps you uncover structure, surface dependencies, and navigate large projects faster—ideal for onboarding, architecture reviews, and refactors.
 
-Cortex is organized as a monorepo:
+## Features
 
-- `apps/desktop`: The frontend desktop application (Electron + Vite + React).
-- `engine/`: The analysis core (Python + FastAPI).
+- **Interactive codebase mapping** to visualize modules and relationships.
+- **High-performance analysis engine** built on FastAPI and extensible plugins.
+- **Desktop-first workflow** with Electron + React for a fluid experience.
+- **Modular architecture** supporting multiple analysis strategies.
+- **Modern UI stack** powered by TypeScript, Vite, and Tailwind CSS.
 
-## 🚀 Quick Start
+## Architecture
+
+| Layer | Path | Description |
+| --- | --- | --- |
+| Desktop App | `apps/desktop` | Electron + Vite + React front-end for visualization and navigation. |
+| Analysis Engine | `engine/` | Python + FastAPI core for parsing and analysis. |
+
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js**: >= 20
-- **pnpm**: >= 9
-- **Python**: >= 3.10
+- **Node.js** `>= 20`
+- **pnpm** `>= 9`
+- **Python** `>= 3.10`
 
 ### Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/cortex.git
-   cd cortex
-   ```
+```bash
+git clone https://github.com/M-R21/Code-Mind-Mapper.git
+# Or your fork:
+# git clone https://github.com/your-username/Code-Mind-Mapper.git
+cd Code-Mind-Mapper
+pnpm install
+```
 
-2. **Install dependencies**:
-   ```bash
-   pnpm install
-   ```
+### Engine Setup
 
-3. **Set up the Analysis Engine**:
-   ```bash
-   cd engine
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+```bash
+cd engine
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-### Running in Development
+## Development
 
-1. **Start the Engine**:
-   ```bash
-   cd engine
-   python main.py
-   ```
+Start the engine and desktop app in separate terminals:
 
-2. **Start the Desktop App**:
-   ```bash
-   # From the root directory
-   pnpm dev
-   ```
+```bash
+# Terminal 1
+cd engine
+python main.py
+```
 
-## 🧪 Testing
+```bash
+# Terminal 2 (repo root)
+pnpm dev
+```
 
-- **Engine Tests**: `pnpm test:engine`
-- **UI Tests**: `pnpm test:ui`
+## Testing
 
-## 🤝 Contributing
+```bash
+pnpm test:engine
+pnpm test:ui
+```
 
-We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
+## Contributing
 
-## 📄 License
+We welcome contributions! Please review [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before submitting changes.
 
-This project is licensed under the [MIT License](LICENSE).
+## Security
+
+For security disclosures, see [SECURITY.md](SECURITY.md).
+
+## License
+
+Licensed under the [MIT License](LICENSE).
 
 ---
 
