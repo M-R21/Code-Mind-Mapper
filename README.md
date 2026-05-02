@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Cortex</h1>
+  <h1 align="center">Cortex (Code Mind Mapper)</h1>
   <p align="center">
     High-performance codebase analysis engine and interactive mapping tool.
     <br />
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-yellow" alt="License" />
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License" />
   <img src="https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&logoColor=white" alt="Node" />
   <img src="https://img.shields.io/badge/pnpm-%3E%3D9-F69220?logo=pnpm&logoColor=white" alt="pnpm" />
   <img src="https://img.shields.io/badge/python-%3E%3D3.10-3776AB?logo=python&logoColor=white" alt="Python" />
