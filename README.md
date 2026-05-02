@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Cortex (Code Mind Mapper)</h1>
+  <h1 align="center">Cortex (Code-Mind-Mapper)</h1>
   <p align="center">
     High-performance codebase analysis engine and interactive mapping tool.
     <br />
@@ -56,6 +56,8 @@
 
 ```bash
 git clone https://github.com/M-R21/Code-Mind-Mapper.git
+# Or your fork:
+# git clone https://github.com/your-username/Code-Mind-Mapper.git
 cd Code-Mind-Mapper
 pnpm install
 ```
